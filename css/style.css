@@ -458,6 +458,20 @@
 .redes a:hover {
     transform: scale(1.2);
 }
+/*----------- bootstrap main boxer------- */
+
+.carousel-inner{
+    
+    width: 30%;
+    margin: 0 auto;
+}
+
+.carousel-indicators  [data-bs-target] {
+
+background-color: black;
+}
+
+
 
 @media (max-width: 600px) {
 
@@ -504,6 +518,8 @@
     align-items: center;
     justify-items: center;
 }
+
+
 
 
 }
