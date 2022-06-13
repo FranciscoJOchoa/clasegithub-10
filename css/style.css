@@ -1,0 +1,509 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+/* -----------------------GRILLA -------------------------*/
+.grilla {
+    display: grid;
+    grid-template-areas:
+        "hotsale hotsale hotsale hotsale hotsale"
+        "nav nav nav nav nav"
+        "colecciones colecciones colecciones colecciones colecciones"
+        "instagram instagram instagram instagram redes"
+        "contacto contacto contacto contacto redes";
+}
+
+/* --------------------HOT SALE------------------------ */
+.hotsale {
+    grid-area: hotsale;
+    display: flex;
+    text-align: center;
+    background-color: black;
+    color: white;
+    height: 7vh;
+    align-content: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.hotsale span {
+    font-weight: bold;
+}
+
+.hotsale p {
+    padding-top: 15px;
+}
+
+/* -----------------------NAV---------------------------- */
+
+.nav {
+    background-color: black;
+    color: #f1f1f1;
+    grid-area: nav;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav img {
+    transition: 0.5s;
+}
+
+.nav img:hover {
+    transform: scale(0.8);
+}
+
+.nav ul {
+    display: flex;
+    align-items: flex-end;
+}
+
+.nav li {
+    list-style: none;
+    padding: 15px;
+    transition: 0.5s;
+}
+
+.nav li:hover {
+    transform: scale(0.8);
+
+}
+
+.nav a {
+    list-style: none;
+    text-decoration: none;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+
+/* -------------------COLECCIONES---------------- */
+.logo {
+    grid-area: colecciones;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+}
+
+.logo section {
+    position: relative;
+    height: 100px;
+    cursor: pointer;
+    width: 200px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
+
+}
+
+.logo section img {
+    width: 100%;
+    height: 100%;
+    transition: all 900ms ease-out;
+    will-change: transform;
+}
+
+.logo section .capa {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0);
+    transition: all 600ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+
+.logo section:hover>.capa {
+    opacity: 1;
+    visibility: visible;
+}
+
+.logo section:hover>.capa h3 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.logo section:hover>img {
+    transform: scale(1.2);
+}
+
+.logo section .capa h3 {
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 120px;
+    transition: all 400ms ease-out;
+    margin-top: 45px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.colecciones {
+    grid-area: colecciones;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.colecciones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+
+
+.colecciones section {
+    position: relative;
+    height: 350px;
+    cursor: pointer;
+    width: 400px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
+
+}
+
+.colecciones section img {
+    width: 100%;
+    height: 100%;
+    transition: all 900ms ease-out;
+    will-change: transform;
+}
+
+.colecciones section .capa {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 103, 123, 0.7);
+    transition: all 600ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+
+.colecciones section:hover>.capa {
+    opacity: 1;
+    visibility: visible;
+}
+
+.colecciones section:hover>.capa h3 {
+    margin-top: 70px;
+    margin-bottom: 15px;
+
+}
+
+.colecciones section:hover>img {
+    transform: scale(1.2);
+}
+
+.colecciones section .capa h3 {
+    color: #fff;
+    margin-bottom: 120px;
+    transition: all 400ms ease-out;
+    margin-top: 30px;
+
+}
+
+.colecciones section .capa p {
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 220px;
+    margin: auto;
+}
+
+/*----------------------- INSTAGRAM---------------------- */
+.logoinstagram {
+    grid-area: instagram;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+}
+
+.logoinstagram section {
+    position: relative;
+    height: 125px;
+    cursor: pointer;
+    width: 175px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
+
+}
+
+.logoinstagram section img {
+    width: 100%;
+    height: 100%;
+    transition: all 900ms ease-out;
+    will-change: transform;
+}
+
+.logoinstagram section .capa {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0);
+    transition: all 600ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+
+.logoinstagram section:hover>.capa {
+    opacity: 1;
+    visibility: visible;
+}
+
+.logoinstagram section:hover>.capa h3 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.logoinstagram section:hover>img {
+    transform: scale(1.2);
+}
+
+.logoinstagram section .capa h3 {
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 120px;
+    transition: all 400ms ease-out;
+    margin-top: 45px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+
+.instagram {
+    grid-area: instagram;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.instagram {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+
+
+.instagram section {
+    position: relative;
+    height: 350px;
+    cursor: pointer;
+    width: 400px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
+
+}
+
+.instagram section img {
+    width: 100%;
+    height: 100%;
+    transition: all 900ms ease-out;
+    will-change: transform;
+}
+
+.instagram section .capa {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 103, 123, 0.7);
+    transition: all 600ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+
+.instagram section:hover>.capa {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.instagram section:hover>img {
+    transform: scale(1.2);
+}
+
+
+.instagram section .capa p {
+    color: #fff;
+    font-size: 10px;
+    line-height: 1.5;
+    width: 50%;
+    max-width: 150px;
+    margin: auto;
+    padding-top: 60px;
+
+}
+
+/* -------------------------FOOTER------------------------ */
+
+.contacto {
+    grid-area: contacto;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: #f1f1f1;
+    text-align: center;
+
+}
+
+.contacto span {
+    font-weight: bold;
+    padding: 10px;
+
+}
+
+.formulario {
+    grid-area: contacto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 3px black;
+    width: 27vw;
+    max-width: 500px;
+    margin: auto;
+    background: rgba(189, 189, 189, 0.5);
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    border-radius: 7px;
+}
+
+.formulario p {
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.formulario input {
+    height: 2rem;
+    width: 300px;
+    border-radius: 10px;
+    background-color: black;
+    color: #f1f1f1;
+    text-align: center;
+    margin: 0.5rem;
+    text-align: center;
+}
+
+.texto {
+    background-color: black;
+    color: #f1f1f1;
+    text-align: center;
+    margin: 20px;
+}
+
+.enviar {
+    transition: 0.8s;
+}
+
+.enviar:hover {
+    background-color: red;
+    color: #f1f1f1;
+    transform: scale(0.9);
+}
+
+.redes {
+    grid-area: redes;
+    display: flex;
+    background-color: black;
+    justify-content: center;
+}
+
+
+
+.redes a {
+    font-size: 30px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background: red;
+    color: #f1f1f1;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+    transition: all .4s ease-in-out;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.redes a:hover {
+    transform: scale(1.2);
+}
+
+@media (max-width: 600px) {
+
+.grilla {
+    display: grid;
+    grid-template-areas:
+        "hotsale hotsale hotsale"
+        "nav nav nav "
+        "colecciones colecciones colecciones "
+        "instagram instagram instagram  redes"
+        "contacto contacto contacto redes";
+    }
+
+.hotsale {
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+
+}
+.hotsale img{
+    max-width: 90px;
+}
+
+.nav{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-direction: column;
+}
+
+.nav img{
+    max-width: 90px;
+}
+
+.nav h1{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+
+}
